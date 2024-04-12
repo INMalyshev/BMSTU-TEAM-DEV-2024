@@ -24,7 +24,6 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         make build
-        # pip install flake8 pytest
         # if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
     # - name: Lint with flake8
@@ -42,9 +41,14 @@ jobs:
       - uses: actions/checkout@v3
       - name: Test stage
         run: |
-          echo "Running tests..."
+          pip install pytest bandit # flake8 
           make test
-        # Здесь могут быть команды для тестирования проекта, например, pytest
+
+      - name: Upload test artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: junit-results
+          path: junit/
 
   deploy:
     needs: test
