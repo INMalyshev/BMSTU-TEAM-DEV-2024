@@ -1,5 +1,6 @@
 from .ping import ping
 from .model import (
+    CardsStatus,
     Card,
     CardSpec,
     Cardset,
@@ -18,6 +19,7 @@ from .exceptions import (
 
 __all__ = [
     "ping",
+    "CardsStatus",
     "Card",
     "CardSpec",
     "Cardset",

@@ -2,6 +2,7 @@ from .core import (
     ping,
     Card,
     CardSpec,
+    CardsStatus,
     Cardset,
     CardsetSpec,
     CardsetInfo,
@@ -13,10 +14,17 @@ from .core import (
     CardsInvalidArguments,
 )
 
+from .sqlite_data import (
+    CardsetRepository,
+    SqliteDbHandler,
+)
+
+
 __all__ = [
     "ping",
     "Card",
     "CardSpec",
+    "CardsStatus",
     "Cardset",
     "CardsetSpec",
     "CardsetInfo",
@@ -26,4 +34,6 @@ __all__ = [
     "CardsException",
     "CardsPermissionDenied",
     "CardsInvalidArguments",
+    "CardsetRepository",
+    "SqliteDbHandler",
 ]
