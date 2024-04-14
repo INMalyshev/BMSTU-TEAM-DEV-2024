@@ -12,6 +12,7 @@ class CardsStatus(str, Enum):
 @dataclass
 class Card:
     id: str
+    cardset_id: str
     term: str
     description: str
     created_at: datetime
