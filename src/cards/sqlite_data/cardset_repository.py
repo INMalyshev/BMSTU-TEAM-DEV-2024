@@ -240,7 +240,8 @@ class CardsetRepository(CardsetRepositoryABC):
             modified_at=current_time,
             addressed_at=current_time,
             status=CardsStatusMapper.map(status),
-            owner_id=cardset.owner_id
+            owner_id=cardset.owner_id,
+            cardset_id=cardset.id,
         )
 
     def modify_card(

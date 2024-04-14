@@ -19,6 +19,10 @@ from .sqlite_data import (
     SqliteDbHandler,
 )
 
+from .api import (
+    ApiAppBuilder,
+)
+
 
 __all__ = [
     "ping",
@@ -36,4 +40,5 @@ __all__ = [
     "CardsInvalidArguments",
     "CardsetRepository",
     "SqliteDbHandler",
+    "ApiAppBuilder",
 ]

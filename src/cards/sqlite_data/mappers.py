@@ -63,5 +63,6 @@ class CardMapper(BaseMapper):
             modified_at=row[4],
             addressed_at=row[5],
             status=CardsStatusMapper.map(row[6]),
-            owner_id=row[7]
+            owner_id=row[7],
+            cardset_id=row[8],
         )
