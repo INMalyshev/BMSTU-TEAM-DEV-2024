@@ -110,7 +110,7 @@ class CardsetService:
         :param limit: Параметр пагинации для результата. Опционально.
         :type limit: int, optional
         :param include_deleted: Если True, в результирующей выборке могут
-            оказаться карточки, которые были отмечены как удаленные. 
+            оказаться карточки, которые были отмечены как удаленные.
             Опционально.
         :type include_deleted: bool, optional
         :param mixed: Если True, в результирующей выборке карточки будут
