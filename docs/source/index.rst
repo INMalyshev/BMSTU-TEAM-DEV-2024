@@ -8,9 +8,11 @@ Welcome to Cards's documentation!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Пример документации
+   :caption: Cards документация
 
    ./core.rst
+   ./db.rst
+   ./api.rst
 
 Indices and tables
 ==================

@@ -1,7 +1,7 @@
-Core
+API
 =====
 
-.. automodule:: cards.core
+.. automodule:: cards.api
     :members:
     :undoc-members:
     :show-inheritance:

@@ -1,7 +1,7 @@
-Core
-=====
+Data base
+==========
 
-.. automodule:: cards.core
+.. automodule:: cards.sqlite_data
     :members:
     :undoc-members:
     :show-inheritance:
