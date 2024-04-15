@@ -2,12 +2,11 @@ name: Deploy doks to Pages
 
 on:
   push:
-    branches: 
-      - '**'
+    branches: ["main"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-  
+
 permissions:
   contents: read
   pages: write
